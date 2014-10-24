@@ -1,5 +1,24 @@
 angular.module('App', ['ionic'])
 
+.config(function ($stateProvider, $urlRouterProvider) {
+  $stateProvider
+  .state('home', {
+    url: '/',
+    templateUrl: 'views/home/home.html'
+  })
+  .state('categories', {
+    url: '/categories',
+    controller: 'CategoriesCtrl',
+    templateUrl: 'views/categories/categories.html',
+    resolve: {
+      Categories: function (BjcpCategories) {
+        return BjcpCategories;
+      }
+    }
+  })
+  $urlRouterProvider.otherwise('/');
+})
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -11,4 +30,8 @@ angular.module('App', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+})
+
+.factory('BjcpCategories', function ($http) {
+  return $http.get('/data/bjcp-2008.json');
 })

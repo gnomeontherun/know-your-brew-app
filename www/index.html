@@ -11,15 +11,29 @@
     <script src="cordova.js"></script>
 
     <script src="js/app.js"></script>
+    <script src="views/categories/categories.js"></script>
   </head>
   <body>
+    <ion-side-menus>
+      <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive nav-title-slide-ios7">
+          <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+      </ion-side-menu-content>
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Know Your Brew</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
+      <ion-side-menu side="left">
+        <ion-header-bar class="bar-dark">
+          <h1 class="title">Know Your Brew</h1>
+        </ion-header-bar>
+        <ion-content has-header="true">
+          <div class="list">
+            <a class="item" href="#/" nav-clear menu-close>Home</a>
+            <a class="item" href="#/categories" nav-clear menu-close>Categories</a>
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+
+    </ion-side-menus>
   </body>
 </html>
