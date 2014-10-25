@@ -1,6 +1,12 @@
 angular.module('App')
-.controller('ColorsCtrl', function ($scope, Srm) {
+.controller('ColorsCtrl', function ($scope, $ionicScrollDelegate, Srm) {
   $scope.colors = Srm.data;
+  $scope.large = false;
+
+  $scope.resize = function () {
+    $scope.large = !$scope.large;
+    $ionicScrollDelegate.resize();
+  }
 
   $scope.contrast = function (rgb) {
     var parts = rgb.split(',');

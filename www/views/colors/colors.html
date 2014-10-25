@@ -1,7 +1,12 @@
 <ion-view title="Colors">
+  <ion-nav-buttons side="right">
+    <button class="button button-clear" ng-click="resize()" ng-bind="(large) ? 'Normal' : 'Large'"></button>
+  </ion-nav-buttons>
   <ion-content class="view-colors">
-    <ion-list>
-      <ion-item ng-repeat="color in colors" ng-style="{color: contrast(color.rgb), background: 'rgb(' + color.rgb + ')'}">{{color.srm}}</ion-item>
+    <ion-list ng-class="{large: large}">
+      <ion-item ng-repeat="color in colors" ng-style="{color: contrast(color.rgb), background: 'rgb(' + color.rgb + ')'}">
+        {{color.srm}}
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
