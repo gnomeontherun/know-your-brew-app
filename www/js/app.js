@@ -16,6 +16,16 @@ angular.module('App', ['ionic'])
       }
     }
   })
+  .state('colors', {
+    url: '/colors',
+    controller: 'ColorsCtrl',
+    templateUrl: 'views/colors/colors.html',
+    resolve: {
+      Srm: function (SrmRgb) {
+        return SrmRgb;
+      }
+    }
+  })
   $urlRouterProvider.otherwise('/');
 })
 
@@ -34,4 +44,8 @@ angular.module('App', ['ionic'])
 
 .factory('BjcpCategories', function ($http) {
   return $http.get('/data/bjcp-2008.json');
+})
+
+.factory('SrmRgb', function ($http) {
+  return $http.get('/data/srm-rgb.json');
 })
