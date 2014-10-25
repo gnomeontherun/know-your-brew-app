@@ -1,7 +1,7 @@
 <ion-view title="Colors">
-  <ion-content>
+  <ion-content class="view-colors">
     <ion-list>
-      <ion-item ng-repeat="srm in srms" ng-style="{color: contrast(srm.rgb), background: 'rgb(' + srm.rgb + ')'}">{{srm.srm}}</ion-item>
+      <ion-item ng-repeat="color in colors" ng-style="{color: contrast(color.rgb), background: 'rgb(' + color.rgb + ')'}">{{color.srm}}</ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
