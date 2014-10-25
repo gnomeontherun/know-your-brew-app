@@ -1,5 +1,43 @@
-<ion-view title="">
+<ion-view title="{{style._id}}. {{style.name}}" class="view-style">
   <ion-content>
-
+    <div class="card">
+      <div class="item item-divider">Aroma</div>
+      <div class="item item-text-wrap">{{style.aroma}}</div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">Appearance</div>
+      <div class="item item-text-wrap">{{style.appearance}}</div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">Flavor</div>
+      <div class="item item-text-wrap">{{style.flavor}}</div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">Mouthfeel</div>
+      <div class="item item-text-wrap">{{style.mouthfeel}}</div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">Overall Impression</div>
+      <div class="item item-text-wrap">{{style.impression}}</div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">Ingredients</div>
+      <div class="item item-text-wrap">{{style.ingredients}}</div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">Commercial Examples</div>
+      <div class="item item-text-wrap">{{style.examples}}</div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">Vital Statistics</div>
+      <div class="item item-stats">
+        <div class="list">
+          <div class="item">OG: {{style.stats.og.low}}-{{style.stats.og.high}}</div>
+          <div class="item">FG: {{style.stats.fg.low}}-{{style.stats.fg.high}}</div>
+          <div class="item">IBU: {{style.stats.ibu.low}}-{{style.stats.ibu.high}}</div>
+          <div class="item">SRM: {{style.stats.srm.low}}-{{style.stats.srm.high}}</div>
+          <div class="item">ABV: {{style.stats.abv.low}}-{{style.stats.abv.high}}</div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

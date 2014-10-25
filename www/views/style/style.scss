@@ -1,0 +1,10 @@
+.view-style {
+  .item-stats {
+    padding: 0;
+    border: 0;
+
+    .item:first-child {
+      border-radius: 0;
+    }
+  }
+}
