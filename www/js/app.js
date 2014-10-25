@@ -16,6 +16,16 @@ angular.module('App', ['ionic'])
       }
     }
   })
+  .state('category', {
+    url: '/category/:typeIndex/:categoryIndex',
+    controller: 'CategoryCtrl',
+    templateUrl: 'views/category/category.html',
+    resolve: {
+      Categories: function (BjcpCategories) {
+        return BjcpCategories;
+      }
+    }
+  })
   .state('colors', {
     url: '/colors',
     controller: 'ColorsCtrl',

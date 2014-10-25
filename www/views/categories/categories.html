@@ -2,11 +2,11 @@
   <ion-content>
     <ion-list>
       <ion-item class="item-divider">Beer</ion-item>
-      <ion-item ng-repeat="category in categories[0].category">{{category._id}}. {{category.name}}</ion-item>
+      <ion-item ng-repeat="category in categories[0].category" ng-href="#/category/0/{{$index}}">{{category._id}}. {{category.name}}</ion-item>
       <ion-item class="item-divider">Mead</ion-item>
-      <ion-item ng-repeat="category in categories[1].category">{{category._id}} {{category.name}}</ion-item>
+      <ion-item ng-repeat="category in categories[1].category" ng-href="#/category/1/{{$index}}">{{category._id}} {{category.name}}</ion-item>
       <ion-item class="item-divider">Cider</ion-item>
-      <ion-item ng-repeat="category in categories[2].category">{{category._id}} {{category.name}}</ion-item>
+      <ion-item ng-repeat="category in categories[2].category" ng-href="#/category/2/{{$index}}">{{category._id}} {{category.name}}</ion-item>
     </ion-list>
   </ion-content>
 </ion-view>

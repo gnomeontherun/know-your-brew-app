@@ -1,0 +1,7 @@
+<ion-view title="{{category._id}}. {{category.name}}">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="category in category.subcategory" ng-href="#/category/{{params.typeIndex}}/{{params.categoryIndex}}/{{category._id}}">{{category._id}}. {{category.name}}</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
