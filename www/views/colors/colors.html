@@ -1,7 +1,6 @@
-<ion-view title="Colors">
+<ion-view title="Colors (SRM)">
   <ion-content class="view-colors" has-bouncing="false">
     <ion-list>
-      <ion-item class="item-divider">SRM</ion-item>
       <ion-item ng-repeat="color in colors" ng-style="{color: contrast(color.rgb), background: 'rgb(' + color.rgb + ')'}">
         {{color.srm}}
       </ion-item>
