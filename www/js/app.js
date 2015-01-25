@@ -46,6 +46,16 @@ angular.module('App', ['ionic'])
       }
     }
   })
+  .state('offFlavors', {
+    url: '/off-flavors',
+    controller: 'OffFlavorsCtrl',
+    templateUrl: 'views/off-flavors/off-flavors.html',
+    resolve: {
+      OffFlavors: function (OffFlavors) {
+        return OffFlavors;
+      }
+    }
+  })
   $urlRouterProvider.otherwise('/');
 })
 
@@ -60,6 +70,10 @@ angular.module('App', ['ionic'])
       StatusBar.styleDefault();
     }
   });
+})
+
+.factory('OffFlavors', function ($http) {
+  return $http.get('/data/off-flavors.json');
 })
 
 .factory('BjcpCategories', function ($http) {
