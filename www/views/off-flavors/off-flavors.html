@@ -1,9 +1,10 @@
 <ion-view title="Off Flavors">
   <ion-content>
     <ion-list>
-      <ion-item class="item-text-wrap" ng-repeat="offFlavor in offFlavors">
+      <ion-item class="item-text-wrap" ng-repeat="offFlavor in offFlavors" ng-click="offFlavor.open = !offFlavor.open">
         <h3>{{offFlavor.term}}</h3>
         <p>{{offFlavor.description}}</p>
+        <p ng-if="offFlavor.open"><b>Possible Solutions</b>: {{offFlavor.solutions}}</p>
       </ion-item>
     </ion-list>
   </ion-content>
