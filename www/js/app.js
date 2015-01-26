@@ -41,8 +41,8 @@ angular.module('App', ['ionic'])
     controller: 'ColorsCtrl',
     templateUrl: 'views/colors/colors.html',
     resolve: {
-      Srm: function (SrmRgb) {
-        return SrmRgb;
+      Colors: function (Colors) {
+        return Colors;
       }
     }
   })
@@ -82,4 +82,8 @@ angular.module('App', ['ionic'])
 
 .factory('SrmRgb', function ($http) {
   return $http.get('/data/srm-rgb.json');
+})
+
+.factory('Colors', function ($http) {
+  return $http.get('/data/colors.json');
 })

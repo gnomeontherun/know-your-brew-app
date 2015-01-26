@@ -7819,6 +7819,12 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   border: 0;
   margin: 0;
   text-align: center; }
+.view-colors .row {
+  padding: 0; }
+.view-colors .row + .row {
+  margin: 0; }
+.view-colors .color {
+  border-bottom: 1px solid #f5f5f5; }
 
 .view-style .item-stats {
   padding: 0;

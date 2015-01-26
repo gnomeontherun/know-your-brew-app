@@ -1,9 +1,11 @@
-<ion-view title="Colors (SRM)">
+<ion-view title="Colors">
   <ion-content class="view-colors" has-bouncing="false">
-    <ion-list>
-      <ion-item ng-repeat="color in colors" ng-style="{color: contrast(color.rgb), background: 'rgb(' + color.rgb + ')'}">
-        {{color.srm}}
-      </ion-item>
-    </ion-list>
+    <div class="row" ng-repeat="color in colors">
+      <div class="col col-30" ng-style="{background: 'linear-gradient(to bottom, rgba({{color.start}},1) 0%, rgba({{color.end}},1) 100%)'}"></div>
+      <div class="col col-10">
+        <div class="srm" ng-repeat="srm in color.srm">{{srm}}</div>
+      </div>
+      <div class="col col-bottom color">{{color.color}}</div>
+    </div>
   </ion-content>
 </ion-view>
