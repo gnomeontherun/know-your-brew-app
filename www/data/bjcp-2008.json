@@ -3084,8 +3084,8 @@
           "__text": "2008"
         },
         "name": "Fruit Beer",
-        "subcategory": {
-          "name": "FRUIT BEER",
+        "subcategory": [{
+          "name": "Fruit Beer",
           "aroma": "The distinctive aromatics associated with the particular fruit(s) should be noticeable in the aroma; however, note that some fruit (e.g., raspberries, cherries) have stronger aromas and are more distinctive than others (e.g., blueberries, strawberries)–allow for a range of fruit character and intensity from subtle to aggressive.  The fruit character should be pleasant and supportive, not artificial and inappropriately overpowering (considering the character of the fruit) nor should it have defects such as oxidation.  As with all specialty beers, a proper fruit beer should be a harmonious balance of the featured fruit(s) with the underlying beer style.  Aroma hops, yeast by-products and malt components of the underlying beer may not be as noticeable when fruit are present.  These components (especially hops) may also be intentionally subdued to allow the fruit character to come through in the final presentation.  If the base beer is an ale then a non-specific fruitiness and/or other fermentation by-products such as diacetyl may be present as appropriate for warmer fermentations.  If the base beer is a lager, then overall less fermentation byproducts would be appropriate.  Some malt aroma may be desirable, especially in dark styles.  Hop aroma may be absent or balanced with fruit, depending on the style.  The fruit should add an extra complexity to the beer, but not be so prominent as to unbalance the resulting presentation.  Some tartness may be present if naturally occurring in the particular fruit(s), but should not be inappropriately intense.",
           "appearance": "Appearance should be appropriate to the base beer being presented and will vary depending on the base beer.  For lighter-colored beers with fruits that exhibit distinctive colors, the color should be noticeable.  Note that the color of fruit in beer is often lighter than the flesh of the fruit itself and may take on slightly different shades.  Fruit beers may have some haze or be clear, although haze is a generally undesirable.  The head may take on some of the color of the fruit.",
           "flavor": "As with aroma, the distinctive flavor character associated with the particular fruit(s) should be noticeable, and may range in intensity from subtle to aggressive.  The balance of fruit with the underlying beer is vital, and the fruit character should not be so artificial and/or inappropriately overpowering as to suggest a fruit juice drink.  Hop bitterness, flavor, malt flavors, alcohol content, and fermentation by-products, such as esters or diacetyl, should be appropriate to the base beer and be harmonious and balanced with the distinctive fruit flavors present.  Note that these components (especially hops) may be intentionally subdued to allow the fruit character to come through in the final presentation.  Some tartness may be present if naturally occurring in the particular fruit(s), but should not be inappropriately intense.  Remember that fruit generally add flavor not sweetness to fruit beers.  The sugar found in fruit is usually fully fermented and contributes to lighter flavors and a drier finish than might be expected for the declared base style.  However, residual sweetness is not necessarily a negative characteristic unless it has a raw, unfermented quality.",
@@ -3097,7 +3097,7 @@
           },
           "examples": "New Glarus Belgian Red and Raspberry Tart, Bell's Cherry Stout, Dogfish Head Aprihop, Great Divide Wild Raspberry Ale, Founders Rübæus, Ebulum Elderberry Black Ale, Stiegl Radler, Weyerbacher Raspberry Imperial Stout, Abita Purple Haze, Melbourne Apricot Beer and Strawberry Beer, Saxer Lemon Lager, Magic Hat #9, Grozet Gooseberry and Wheat Ale,  Pyramid Apricot Ale, Dogfish Head Fort",
           "_id": "20A"
-        },
+        }],
         "_id": "20"
       },
       {
@@ -3279,7 +3279,7 @@
           },
           "Note that certain other specialty categories exist in the guidelines.  Belgian Specialties or clones of specific Belgian beers should be entered in Category 16E.  Christmas-type beers should be entered in Category 21B (unless they are Belgian Christmas-type beers; these should be entered in 16E).  Beers with only one type of fruit, spice, herbs, vegetables, or smoke should be entered in Categories 20-22.  Specialty meads or ciders should be entered in their respective categories (26C for meads, 28D for ciders)."
         ],
-        "subcategory": {
+        "subcategory": [{
           "name": "Specialty Beer",
           "aroma": "The character of the stated specialty ingredient or nature should be evident in the aroma, but harmonious with the other components (yet not totally overpowering them).  Overall the aroma should be a pleasant combination of malt, hops and the featured specialty ingredient or nature as appropriate to the specific type of beer being presented. The individual character of special ingredients and processes may not always be identifiable when used in combination.  If a classic style base beer is specified then the characteristics of that classic style should be noticeable.  Note, however, that classic styles will have a different impression when brewed with unusual ingredients, additives or processes. The typical aroma components of classic beer styles (particularly hops) may be intentionally subdued to allow the special ingredients or nature to be more apparent.",
           "appearance": "Appearance should be appropriate to the base beer being presented and will vary depending on the base beer (if declared).  Note that unusual ingredients or processes may affect the appearance so that the result is quite different from the declared base style.  Some ingredients may add color (including to the head), and may affect head formation and retention.",
@@ -3299,7 +3299,7 @@
           },
           "examples": "Bell's Rye Stout, Bell's Eccentric Ale, Samuel Adams Triple Bock and Utopias, Hair of the Dog Adam, Great Alba Scots Pine, Tommyknocker Maple Nut Brown Ale, Great Divide Bee Sting Honey Ale, Stoudt's Honey Double Mai Bock, Rogue Dad's Little Helper, Rogue Honey Cream Ale, Dogfish Head India Brown Ale, Zum Uerige Sticke and Doppel Sticke Altbier, Yards Brewing Company General Washington Tavern Porter, Rauchenfels Steinbier, Odells 90 Shilling Ale, Bear Republic Red Rocket Ale, Stone Arrogant Bastard",
           "_id": "23A"
-        },
+        }],
         "_id": "23"
       }
     ],

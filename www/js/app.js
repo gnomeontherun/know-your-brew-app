@@ -36,6 +36,16 @@ angular.module('App', ['ionic'])
       }
     }
   })
+  // .state('chart', {
+  //   url: '/chart',
+  //   controller: 'ChartCtrl',
+  //   templateUrl: 'views/chart/chart.html',
+  //   resolve: {
+  //     Categories: function (BjcpCategories) {
+  //       return BjcpCategories;
+  //     }
+  //   }
+  // })
   .state('colors', {
     url: '/colors',
     controller: 'ColorsCtrl',
@@ -59,18 +69,18 @@ angular.module('App', ['ionic'])
   $urlRouterProvider.otherwise('/');
 })
 
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if(window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
-    if(window.StatusBar) {
-      StatusBar.styleDefault();
-    }
-  });
-})
+// .run(function($ionicPlatform) {
+//   $ionicPlatform.ready(function() {
+//     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+//     // for form inputs)
+//     if(window.cordova && window.cordova.plugins.Keyboard) {
+//       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+//     }
+//     if(window.StatusBar) {
+//       StatusBar.styleDefault();
+//     }
+//   });
+// })
 
 .factory('OffFlavors', function ($http) {
   return $http.get('/data/off-flavors.json');

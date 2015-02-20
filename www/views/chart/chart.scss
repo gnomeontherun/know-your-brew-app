@@ -1,0 +1,17 @@
+.view-chart {
+  .container {
+    min-width: 660px;
+  }
+  .style-name {
+    white-space: nowrap;
+  }
+  .style-holder {
+    display: absolute;
+  }
+  .style-bar {
+    display: inline-block;
+    background: #333;
+    position: relative;
+    height: 14px;
+  }
+}

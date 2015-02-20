@@ -1,0 +1,25 @@
+<ion-view title="Style Chart">
+  <ion-content direction="xy" has-bouncing="false" class="view-chart padding">
+    <div class="container">
+      <table>
+        <tr>
+          <th>Style</th>
+          <th>IBUs</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>1 - 120</td>
+        </tr>
+        <tr ng-repeat="category in categories" class="style-holder">
+          <td class="style-name">{{category._id}} {{category.name}}</td>
+          <td ng-if="category.stats.ibu"><span class="style-bar" ng-style="getStyle(category)"></span></td>
+        </tr>
+      </table>
+    </div>
+    <!-- <div class="list" ng-repeat="category in categories[0].category">
+      <div class="item" ng-repeat="subcategory in category.subcategory">
+        {{subcategory._id}}. {{subcategory.name}}
+      </div>
+    </div> -->
+  </ion-content>
+</ion-view>

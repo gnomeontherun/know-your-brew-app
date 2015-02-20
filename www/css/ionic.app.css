@@ -7826,6 +7826,18 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 .view-colors .color {
   border-bottom: 1px solid #f5f5f5; }
 
+.view-chart .container {
+  min-width: 660px; }
+.view-chart .style-name {
+  white-space: nowrap; }
+.view-chart .style-holder {
+  display: absolute; }
+.view-chart .style-bar {
+  display: inline-block;
+  background: #333;
+  position: relative;
+  height: 14px; }
+
 .view-style .item-stats {
   padding: 0;
   border: 0; }
